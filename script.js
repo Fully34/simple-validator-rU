@@ -11,7 +11,7 @@ function gatherPhoneNumber() {
     var isNumber = true; 
 
 
-    if ( (phoneNumber[3] !== "-") || (phoneNumber[7] !== "-") ) {
+    if ( (phoneNumber[3] !== "-") || (phoneNumber[7] !== "-") && (phoneNumber.length > 12)) {
 
         isNumber = false;
     }
