@@ -11,7 +11,7 @@ function gatherPhoneNumber() {
     var isNumber = true; 
 
 
-    if ( (phoneNumber[3] !== "-") || (phoneNumber[7] !== "-") && (phoneNumber.length > 12)) {
+    if ( (phoneNumber[3] !== "-") || (phoneNumber[7] !== "-") && (phoneNumber.length > 12) || (phoneNumber.length < 12 )) {
 
         isNumber = false;
     }
@@ -153,7 +153,7 @@ function areTheyMarried() {
         return married;
     }
 
-    if ( (married !== "yes") || or (married !== "no") ) {
+    if ( (married !== "yes") || (married !== "no") ) {
 
         alert("YES OR NO!  WE ARE JUST CURIOUS, JEEZ!!!");
         areTheyMarried();
